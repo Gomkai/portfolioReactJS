@@ -24,64 +24,128 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="../src/style.css" />
 
     <title>React App</title>
   </head>
   <body>
-
     <!-- header -->
     <header>
-      <nav class="navbar navbar-expand-lg bg-secondary text-light text-uppercase fixed-top" id="mainNav">
-          <div class="container">
-  
-              <a class="navbar-brand text-light fw-bolder" href="#page-top">Alex</a>
-              <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse"
-              data-bs-target="#navbarResponsive"
-              aria-controls="navbarResponsive"
-              aria-expanded="false"
-              aria-label="Toggle navigation"><i class="fas fa-bars"></i>
-              </button>
-              
-              <div class="collapse navbar-collapse"id="navbarResponsive">
-                  <ul class="navbar-nav ms-auto">
-                      <li class="nav-item mx-0 mx-lg-1 "><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="home">home</a></li>
-                      <li class="nav-item mx-0 mx-lg-1 "><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#services">services</a></li>
-                      <li class="nav-item mx-0 mx-lg-1 "><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#portfolio">portfolio</a></li>
-                      <li class="nav-item mx-0 mx-lg-1 "><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#contact">services</a></li>
-                      <li class="nav-item mx-0 mx-lg-1 "><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#mentions">mentions légales</a></li>
-                  </ul>
-              </div>
+      <nav
+        class="navbar navbar-expand-lg bg-dark text-light text-uppercase fixed-top"
+        id="mainNav"
+      >
+        <div class="container">
+          <a class="navbar-brand text-light fw-bolder" href="#page-top">Alex</a>
+          <button
+            class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <i class="fas fa-bars"></i>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="home">home</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#services">services</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#portfolio">portfolio</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#contact">services</a></li>
+              <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded text-uppercase" href="#mentions">mentions légales</a></li>
+            </ul>
           </div>
+        </div>
       </nav>
-  
-  
-  </header>
+    </header>
 
-    <!-- home -->
+    <main>
+      <!-- home -->
+        <div class="container-fluid p-0 position-relative mb-4" style="height: 650px; background-image: url('../src/images/hero-bg.jpg'); background-size: cover; background-position: center;">
+            <section class="position-absolute top-50 start-50 translate-middle text-center text-white">
+            <h1 class="fw-bolder">BONJOUR,je suis John Doe</h1>
+            <h2 class="fw-bolder">Développeur web full stack</h2>
+            <button class="btn btn-danger text-white">En savoir plus</button>
+            </section>
+        </div>
+        
+        <div class="container border border-primary">
+            <div class="row justify-content-center">
+                <!-- Première section avec marge à gauche -->
+                <section class="col-md-5 ms-3 border border-primary">
+                    <h3 class="border-bottom border-3 border-primary">A propos</h3>
+                    <img class="img-fluid" src="../src/images/john-doe-about.jpg" alt="">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore
+                        voluptatem sint quam repellat, et corporis quisquam aliquam tempora
+                        ratione perspiciatis?
+                    </p>
+                </section>
+        
+                <!-- Deuxième section avec marge à droite -->
+                <section class="col-md-5 me-3">
+                    <div class="container border border-primary">
+                        <h3 class="border-bottom border-3 border-primary">Mes compétences</h3>
+                        <div class="row">
+                            <div class="col-md-12">
+                                    <p>HTML5 90%</p>
+                                    <div class="progress mb-3">
+                                    <div class="progress-bar bg-danger" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                
+                                    <P>CSS3 80%</P> 
+                                    <div class="progress mb-3">
+                                    <div class="progress-bar bg-info" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                
+                                    <P>JAVASCRIPT 70%</P>
+                                    <div class="progress mb-3">
+                                    <div class="progress-bar bg-warning" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                
+                                    <P>PHP 60%</P>
+                                    <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                
+                                    <P>REACT 50%</P>
+                                    <div class="progress mb-3">
+                                    <div class="progress-bar bg-primary" role="progressbar" style="width: 50%;" aria-valuenow="500" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    
 
+                </section>
+            </div>
+        </div>
+ 
 
+      <!-- portfolio -->
 
-    <!-- service -->
+      <!-- contacts -->
 
-
-
-    <!-- portfolio -->
-
-
-
-    <!-- contacts -->
-
-
-    <!-- mentions légales -->
-
-
-
+      <!-- mentions légales -->
+    </main>
     <!-- footer -->
-
 
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
